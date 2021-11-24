@@ -7,7 +7,6 @@
   font-size: 16px;
 }
 
-/* CSS RESETS */
 html {
   box-sizing: border-box;
 }
@@ -23,10 +22,35 @@ html {
   padding: 0;
 }
 
-main {
+body {
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  background: url(images/pattern-background-mobile.svg) no-repeat top/cover,
+    var(--very-pale-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container {
+  max-width: 20rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem;
+  margin-top: 4rem;
+  border-radius: 1.2rem;
+}
+
+.hero {
+  width: 100%;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+h1,
+p {
+  text-align: center;
 }
 
 .section2 {
